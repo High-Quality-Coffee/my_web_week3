@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="reset.css"> <!-- h1태그의 공백을 없애주는 코드 -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .scene{
+            /*background-image: url(img/heic0910e.jpg);모든배경에 이미지동일*/
+            height:100vh;
+            overflow: hidden;
+            /* 부모보다 자식이 큰 경우에 넘치는것을 막아준다 */
+            background-attachment:fixed;
+            background-size: cover; /*백그라운드의 사이즈가 잘리지 않고 전체를 사용*/
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 200;
+        }
+
+        .scene.one{
+            background-image: url(img/heic0910e.jpg);
+        }
+        .scene.two{
+            background-image: url(img/heic1501a.jpg);
+        }
+        .scene.three{
+            background-image: url(img/heic1608a.jpg);
+        }
+        
+        .scene header{
+            color:white;
+            max-width: 80%;
+            /* 헤더의 폭이 보이는 화면페이지의 최대 50프로 */
+            /*border: 5px solid yellow;*/
+            /* 헤더의 영역을 좀더 명확히 구분하기 위해서 작성 */
+            position: relative;
+            left: 50%;
+            top:50%;
+            transform: translateX(-50%) translateY(-50%);
+            /* 자신의 크기의 절반만큼 왼쪽으로 이동한다 */
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .scene header h1{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .scene header h1:after{
+            content:'';
+            /*content: 'test'; css로 적용되는것이기 때문에 실제로 복붙에 적용안된다*/
+            border-bottom: 1px solid white;
+            width: 8rem; /*test content가 display값이 똑같은것이 아니기때문에 적용안됨*/
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="scene one">
+        <header>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Aliquam repudiandae eaque, suscipit veniam nisi iure.
+        </header>
+    </section>
+    <section class="scene two">
+        <header>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Aliquam repudiandae eaque, suscipit veniam nisi iure.
+        </header>
+    </section>
+    <section class="scene three">
+        <header>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Aliquam repudiandae eaque, suscipit veniam nisi iure.
+        </header>
+    </section>
+</body>
+</html>
