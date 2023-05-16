@@ -1,28 +1,4 @@
-/* h1{}
-h1 a{}
-h1 a img{}
-main{}
-main form{}
-main form fieldset{}
-main form fieldset legend{}
-main form fieldset ul{}
-main form fieldset ul li{}
-main form fieldset ul li .id_bg{}
-main form fieldset ul li span input{}
-main form fieldset ul li .error .id_error{}
-main form fieldset ul li .pw_bg{}
-main form fieldset ul li span input[name=user_pw]{}
-main form fieldset ul li .pw_show_hide{}
-main form fieldset ul li .error .pw_error{}
-main form fieldset div p label input {}
-main form fieldset div p label p a {}
-main form fieldset button {}
-main a {}
-footer {} */
-
-/* #0074e9 (파랑) | #e7223d (빨강) */
-
-h1 {text-align: center; margin: 50px auto 30px;}
+h1 {text-align: center; margin: 50px auto 30px;} 
 h1 a {}
 h1 a img {width: 200px;}
 
@@ -93,7 +69,7 @@ main #loginFrm fieldset .btm p label input[name=login_y] + span::before {
     border: 1px solid #ccc;
     content: ''; display: inline-block;
     width:17px; height: 17px;
-    background-image: url(../images/icon.svg);
+    background-image: url(../image/icon.svg);
     background-position: -65px -22px;
     margin-right: 5px;
 } 
@@ -101,13 +77,13 @@ main #loginFrm fieldset .btm p label input[name=login_y]:checked + span::before 
     background-position: -84px -21px;
 }
 main #loginFrm fieldset .btm p label span {}
-main #loginFrm fieldset .btm .idpw_serch {color: #004b96;}
-main #loginFrm fieldset .btm .idpw_serch::after{
+main #loginFrm fieldset .btm .idpw_search {color: #004b96;}
+main #loginFrm fieldset .btm .idpw_search::after{
     content: '';
     display: inline-block;
     width: 8px;
     height: 15px;
-    background-image: url(../images/icon.svg);
+    background-image: url(../image/icon.svg);
     background-position: -104px -21px;
     margin-left: 5px;
 }
@@ -124,6 +100,3 @@ main .join_link {
 }
 
 footer {color: #333; text-align: center; font-size: 0.85rem; margin-top: 20px;}
-
-
-
